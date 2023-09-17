@@ -1,38 +1,76 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+/* Add this CSS to your App.css or create a separate CSS file */
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+/* Style for the top navigation bar */
+.nav {
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+  color: #c54444; /* Change the text color to make it visible on the background */
+  padding: 10px 0px; /* Adjust the padding as needed */
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height: 8ch;
+  margin-left: 10px; /* 10 pixels from the left side */
+  position: fixed; /* Fixed positioning to keep it at the top of the page */
+  top: 0; /* Position at the top of the viewport */
+  left: 700px;
+  right: 3px;
+  z-index: 1000; /* Ensure it's above other content */
 }
 
-.App-link {
-  color: #61dafb;
+/* Style for the main content */
+.file-list {
+  margin-right: 40px;
+  margin-top: 80px; /* Add margin to the top to push content below the fixed navigation bar */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Style for the left and right panels (adjust as needed) */
+.left-panel {
+  float: left; /* Float left for the left panel */
+  width: 20%; /* Adjust the width as needed */
+
+  padding: 20px; /* Add padding as needed */
 }
+
+.right-panel {
+  margin-top: 50px;
+  float: right; /* Float right for the right panel */
+  width: 850px;
+
+}
+
+/* Style for the left image (adjust as needed) */
+.left-image {
+  /* Ensure the image fits within its container */
+  width: 500px;
+  height: 700px;
+  padding-right: 40px;
+  margin-left: -100px; /* Move the image 100 pixels to the left */
+}
+
+/* Style for the drag and drop area */
+.drag-drop-area {
+  border: 2px dashed #c54444;
+  text-align: center;
+  padding: 20px;
+  color: #c54444;
+  font-weight: bold;
+  background-color: #f5f5f5;
+}
+
+/* Style for the drag and drop area when dragging over */
+.drag-drop-area.dragging {
+  background-color: #f0f0f0;
+}
+
+
+
+
+
+
+
+/* Style for the video container (adjust as needed) */
+.video-container {
+  text-align: center; /* Center the video horizontally */
+}
+
+/* Additional styles as needed for your specific design */
+
